@@ -31,6 +31,8 @@ TME4:
     /home/dlp/run.sh -id TME4 -name TME4
     com.paracamplus.ilp2.ilp2tme4.parser.ilpml.InterpreterTest
     com.paracamplus.ilp2.ilp2tme4.parser.ilpml.CompilerTest
+    com.paracamplus.ilp2.ilp2tme4.methode2.InterpreterTest
+    com.paracamplus.ilp2.ilp2tme4.methode2.CompilerTest
   artifacts:
     reports:
       junit: report.xml
