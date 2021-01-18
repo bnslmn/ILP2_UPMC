@@ -33,6 +33,8 @@ TME4:
     com.paracamplus.ilp2.ilp2tme4.parser.ilpml.CompilerTest
     com.paracamplus.ilp2.ilp2tme4.methode2.InterpreterTest
     com.paracamplus.ilp2.ilp2tme4.methode2.CompilerTest
+    com.paracamplus.ilp2.ilp2tme4.methode3.InterpreterTest
+    com.paracamplus.ilp2.ilp2tme4.methode3.CompilerTest
   artifacts:
     reports:
       junit: report.xml
