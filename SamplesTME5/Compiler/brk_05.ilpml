@@ -1,0 +1,6 @@
+i = 1
+j = 0
+L1: while i <= 1 do
+		if i+j <= 2 then break L1;
+x = i + j
+print(x)

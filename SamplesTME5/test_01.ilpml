@@ -1,0 +1,9 @@
+while true
+do
+if 1>2 then break
+else
+	if false then break
+	else
+		if break then break
+		else
+			print(1)

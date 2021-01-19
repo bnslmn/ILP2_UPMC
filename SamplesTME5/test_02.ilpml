@@ -1,0 +1,8 @@
+i=1
+while i<>0
+do
+   if i==1 then break B1
+
+B1:while i==1
+do
+	print(i) break

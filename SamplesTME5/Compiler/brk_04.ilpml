@@ -1,0 +1,5 @@
+i = 0
+L1: while (i<1) do
+	if i == 0 then i = i+1
+	else break L1
+print(i)
