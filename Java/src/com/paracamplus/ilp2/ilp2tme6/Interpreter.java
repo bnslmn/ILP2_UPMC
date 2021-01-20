@@ -17,6 +17,7 @@ import com.paracamplus.ilp2.interfaces.IASTprogram;
 
 public class Interpreter extends com.paracamplus.ilp2.interpreter.Interpreter {
 
+	protected InlineTransform inlineTransform;
     protected RenameTransform renameTransform;
     protected IASTfactory factory;
     protected INormalizationEnvironment env;
@@ -28,7 +29,10 @@ public class Interpreter extends com.paracamplus.ilp2.interpreter.Interpreter {
         factory = new ASTfactory();
         
         // renommage des variables dans la new factory
-        renameTransform = new RenameTransform(factory);
+        //renameTransform = new RenameTransform(factory);
+        
+        //intégration
+        inlineTransform = new InlineTransform(factory);
         env = NormalizationEnvironment.EMPTY;   
     }
 
@@ -37,8 +41,9 @@ public class Interpreter extends com.paracamplus.ilp2.interpreter.Interpreter {
             throws EvaluationException {
         try {
         	//parcourir l'AST avec le nouveau renommage
+           // iast = (IASTprogram) renameTransform.visit(iast, env);
         	
-            iast = (IASTprogram) renameTransform.visit(iast, env);
+            iast = (IASTprogram) inlineTransform.visit(iast,env);
             for ( IASTfunctionDefinition fd : iast.getFunctionDefinitions() ) {
                 Object f = this.visit(fd, lexenv);
                 String v = fd.getName();
