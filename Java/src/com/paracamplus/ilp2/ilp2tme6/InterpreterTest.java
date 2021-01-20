@@ -17,7 +17,6 @@ import com.paracamplus.ilp1.interpreter.test.InterpreterRunner;
 import com.paracamplus.ilp1.parser.xml.IXMLParser;
 import com.paracamplus.ilp2.ast.ASTfactory;
 import com.paracamplus.ilp2.interfaces.IASTfactory;
-import com.paracamplus.ilp2.interpreter.Interpreter;
 import com.paracamplus.ilp2.parser.xml.XMLParser;
 
 public class InterpreterTest extends com.paracamplus.ilp2.interpreter.test.InterpreterTest{
@@ -28,7 +27,7 @@ public class InterpreterTest extends com.paracamplus.ilp2.interpreter.test.Inter
 	}
 	//"SamplesILP2", "SamplesILP1",
 	
-    protected static String[] samplesDirName = { "SamplesILP1", "SamplesILP2", "SamplesTME6" };
+    protected static String[] samplesDirName = {  "SamplesTME6" };
     protected static String pattern = ".*\\.ilpml";
     
        

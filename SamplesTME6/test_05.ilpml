@@ -1,4 +1,0 @@
-function f(x) ( let x = x + 1 in 2 * x )
-x = 7
-let x = 4 * x in
-f(x-5)
